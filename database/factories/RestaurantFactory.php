@@ -19,6 +19,8 @@ class RestaurantFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'address' => $this->faker->address(),
+            'note' => $this->faker->randomFloat(1, 0, 5),
+            'status' => $this->faker->randomElement([1, 0])
         ];
     }
 }

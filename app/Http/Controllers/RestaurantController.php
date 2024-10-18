@@ -28,8 +28,8 @@ class RestaurantController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'nom' => 'required|max:255',
-            'adresse' => 'required|max:255',
+            'name' => 'required|max:255',
+            'address' => 'required|max:255',
             'note' => 'numeric',
             'status' => 'required'
         ]);
@@ -61,7 +61,7 @@ class RestaurantController extends Controller
     {
         $validatedData = $request->validate([
             'nom' => 'required|max:255',
-            'adresse' => 'required|max:255',
+            'address' => 'required|max:255',
             'note' => 'numeric',
             'status' => 'required'
         ]);
